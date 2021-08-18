@@ -86,7 +86,7 @@ namespace IdentityServer
                 {
                     SubjectId = "5BE86359-073C-434B-AD2D-A3932222DABE",
                     Username = "test",
-                    Password = "swn",
+                    Password = "test",
                     Claims = new List<Claim>
                     {
                         new Claim(JwtClaimTypes.GivenName, "testName"),

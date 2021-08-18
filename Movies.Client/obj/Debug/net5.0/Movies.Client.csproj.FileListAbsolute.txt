@@ -126,3 +126,6 @@ C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\Movies.Cli
 C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\Movies.Client\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
 C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\Movies.Client\obj\Debug\net5.0\Razor\Views\Movies\Edit.cshtml.g.cs
 C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\Movies.Client\obj\Debug\net5.0\Razor\Views\Movies\Index.cshtml.g.cs
+C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\Movies.Client\bin\Debug\net5.0\IdentityModel.dll
+C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\Movies.Client\bin\Debug\net5.0\System.Text.Encodings.Web.dll
+C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\Movies.Client\bin\Debug\net5.0\System.Text.Json.dll

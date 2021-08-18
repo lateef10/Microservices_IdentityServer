@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Movies.Client.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,21 @@ namespace Movies.Client.ApiServices
             _httpContextAccessor = httpContextAccessor;
         }
 
+        public async Task<IEnumerable<Movie>> GetMovies()
+        {
+            var httpClient = _httpClientFactory.CreateClient("MovieAPIClient");
+
+            var request = new HttpRequestMessage(HttpMethod.Get, "/movies");
+
+            var response = await httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
+
+            response.EnsureSuccessStatusCode();
+
+            var content = await response.Content.ReadAsStringAsync();
+            var movieList = JsonConvert.DeserializeObject<List<Movie>>(content);
+            return movieList;
+        }
+
         public Task<Movie> CreateMovie(Movie movie)
         {
             throw new NotImplementedException();
@@ -34,10 +50,6 @@ namespace Movies.Client.ApiServices
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Movie>> GetMovies()
-        {
-            throw new NotImplementedException();
-        }
 
         public Task<UserInfoViewModel> GetUserInfo()
         {
