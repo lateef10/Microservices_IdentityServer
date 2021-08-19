@@ -14,7 +14,7 @@ namespace IdentityServer
             new Client[]
             {
                    new Client
-                   {
+                   {// standard definition. Won't be using this
                         ClientId = "movieClient",
                         AllowedGrantTypes = GrantTypes.ClientCredentials,
                         ClientSecrets =

@@ -22,7 +22,7 @@ namespace Movies.API.Data
                         Rating = "9.3",
                         ImageUrl = "images/src",
                         ReleaseDate = new DateTime(1994, 5, 5),
-                        Owner = "alice"
+                        Owner = "test"
                     },
                     new Movie
                     {
@@ -32,7 +32,7 @@ namespace Movies.API.Data
                         Rating = "9.2",
                         ImageUrl = "images/src",
                         ReleaseDate = new DateTime(1972, 5, 5),
-                        Owner = "alice"
+                        Owner = "test"
                     },
                     new Movie
                     {
@@ -42,7 +42,7 @@ namespace Movies.API.Data
                         Rating = "9.1",
                         ImageUrl = "images/src",
                         ReleaseDate = new DateTime(2008, 5, 5),
-                        Owner = "bob"
+                        Owner = "admin"
                     },
                     new Movie
                     {
@@ -52,7 +52,7 @@ namespace Movies.API.Data
                         Rating = "8.9",
                         ImageUrl = "images/src",
                         ReleaseDate = new DateTime(1957, 5, 5),
-                        Owner = "bob"
+                        Owner = "admin"
                     },
                     new Movie
                     {
@@ -62,7 +62,7 @@ namespace Movies.API.Data
                         Rating = "8.9",
                         ImageUrl = "images/src",
                         ReleaseDate = new DateTime(1993, 5, 5),
-                        Owner = "alice"
+                        Owner = "test"
                     },
                     new Movie
                     {
@@ -72,7 +72,7 @@ namespace Movies.API.Data
                         Rating = "8.9",
                         ImageUrl = "images/src",
                         ReleaseDate = new DateTime(1994, 5, 5),
-                        Owner = "alice"
+                        Owner = "test"
                     },
                     new Movie
                     {
@@ -82,7 +82,7 @@ namespace Movies.API.Data
                         Rating = "8.8",
                         ImageUrl = "images/src",
                         ReleaseDate = new DateTime(1999, 5, 5),
-                        Owner = "bob"
+                        Owner = "admin"
                     },
                     new Movie
                     {
@@ -92,7 +92,7 @@ namespace Movies.API.Data
                         Rating = "8.8",
                         ImageUrl = "images/src",
                         ReleaseDate = new DateTime(1994, 5, 5),
-                        Owner = "bob"
+                        Owner = "admin"
                     }
                 };
                 moviesContext.Movie.AddRange(movies);
