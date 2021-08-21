@@ -31,8 +31,8 @@ namespace IdentityServer
             //https://github.com/IdentityServer/IdentityServer4.Quickstart.UI
             //iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/IdentityServer/IdentityServer4.Quickstart.UI/main/getmain.ps1'))
 
-
-            /* Not working as intended
+/*
+            // Not working as intended
              services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("IdentityServerConnectionString")));
             services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -54,16 +54,15 @@ namespace IdentityServer
 
             builder.AddDeveloperSigningCredential();*/
 
-
             services.AddControllersWithViews();
 
             /* Working for In-memory db: Good for testing purpose instead of using ef database*/
                 services.AddIdentityServer()
-                .AddInMemoryClients(Config.Clients)
-                .AddInMemoryApiScopes(Config.ApiScopes)
-                .AddInMemoryIdentityResources(Config.IdentityResources)
-                .AddTestUsers(TestUsers.Users)
-                .AddDeveloperSigningCredential();
+                    .AddInMemoryClients(Config.Clients)
+                    .AddInMemoryApiScopes(Config.ApiScopes)
+                    .AddInMemoryIdentityResources(Config.IdentityResources)
+                    .AddTestUsers(TestUsers.Users)
+                    .AddDeveloperSigningCredential();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

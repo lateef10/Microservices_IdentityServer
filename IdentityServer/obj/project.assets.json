@@ -56,6 +56,21 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "IdentityServer4.AspNetIdentity/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "IdentityServer4": "4.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/IdentityServer4.AspNetIdentity.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/IdentityServer4.AspNetIdentity.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "IdentityServer4.EntityFramework/4.1.2": {
         "type": "package",
         "dependencies": {
@@ -1628,6 +1643,21 @@
         "lib/netcoreapp3.1/IdentityServer4.dll",
         "lib/netcoreapp3.1/IdentityServer4.pdb",
         "lib/netcoreapp3.1/IdentityServer4.xml"
+      ]
+    },
+    "IdentityServer4.AspNetIdentity/4.1.2": {
+      "sha512": "wQ15LdslG5b2dA6YyVNJq6nFoTZSrBq7K4PNliC5liwiMwnGJD6bPRLyG/RdF7SQmil1tNIZH9Pu0O/4ZwW0jg==",
+      "type": "package",
+      "path": "identityserver4.aspnetidentity/4.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "identityserver4.aspnetidentity.4.1.2.nupkg.sha512",
+        "identityserver4.aspnetidentity.nuspec",
+        "lib/netcoreapp3.1/IdentityServer4.AspNetIdentity.dll",
+        "lib/netcoreapp3.1/IdentityServer4.AspNetIdentity.pdb",
+        "lib/netcoreapp3.1/IdentityServer4.AspNetIdentity.xml"
       ]
     },
     "IdentityServer4.EntityFramework/4.1.2": {
@@ -5771,6 +5801,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "IdentityServer4 >= 4.1.2",
+      "IdentityServer4.AspNetIdentity >= 4.1.2",
       "IdentityServer4.EntityFramework >= 4.1.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.9",
@@ -5817,6 +5848,10 @@
         "targetAlias": "net5.0",
         "dependencies": {
           "IdentityServer4": {
+            "target": "Package",
+            "version": "[4.1.2, )"
+          },
+          "IdentityServer4.AspNetIdentity": {
             "target": "Package",
             "version": "[4.1.2, )"
           },

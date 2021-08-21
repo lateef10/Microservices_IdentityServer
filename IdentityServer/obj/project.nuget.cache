@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IxmfuMbP1r+VvMEqlI2wUzFue34r2oaNzAbNsUvT/6T57Ef7Nh1rm6aLDzFP2Mye8E+12AODNaf25vEcy4LnnQ==",
+  "dgSpecHash": "HoRZvwSWvugJw+dzfuu25seawXX/LcamqQeT4Afr6rbiyxQHl/nqlmWHwxlhLm/p6jiXgCC2VBxxsyGqKoUJBg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lateef\\Desktop\\Working Copy\\Microservices_IdentityServer\\src\\IdentityServer\\IdentityServer.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Lateef\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lateef\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
     "C:\\Users\\Lateef\\.nuget\\packages\\identityserver4\\4.1.2\\identityserver4.4.1.2.nupkg.sha512",
+    "C:\\Users\\Lateef\\.nuget\\packages\\identityserver4.aspnetidentity\\4.1.2\\identityserver4.aspnetidentity.4.1.2.nupkg.sha512",
     "C:\\Users\\Lateef\\.nuget\\packages\\identityserver4.entityframework\\4.1.2\\identityserver4.entityframework.4.1.2.nupkg.sha512",
     "C:\\Users\\Lateef\\.nuget\\packages\\identityserver4.entityframework.storage\\4.1.2\\identityserver4.entityframework.storage.4.1.2.nupkg.sha512",
     "C:\\Users\\Lateef\\.nuget\\packages\\identityserver4.storage\\4.1.2\\identityserver4.storage.4.1.2.nupkg.sha512",
