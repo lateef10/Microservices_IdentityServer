@@ -83,7 +83,8 @@ namespace Movies.Client.ApiServices
 
             foreach (var claim in userInfoResponse.Claims)
             {
-                userInfoDictionary.Add(claim.Type, claim.Value);
+                if(!userInfoDictionary.ContainsKey(claim.Type))
+                    userInfoDictionary.Add(claim.Type, claim.Value);
             }
 
             return new UserInfoViewModel(userInfoDictionary);

@@ -95,3 +95,4 @@ C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\IdentitySe
 C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\IdentityServer\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\IdentityServer\bin\Debug\net5.0\IdentityServer4.AspNetIdentity.dll
 C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\IdentityServer\obj\Debug\net5.0\IdentityServer.csproj.AssemblyReference.cache
+C:\Users\Lateef\Desktop\Working Copy\Microservices_IdentityServer\src\IdentityServer\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
