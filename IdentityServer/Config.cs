@@ -10,6 +10,7 @@ namespace IdentityServer
 {
     public class Config
     {
+        //Client is the application that can access the identity
         public static IEnumerable<Client> Clients =>
             new Client[]
             {
@@ -54,16 +55,25 @@ namespace IdentityServer
                    }
             };
 
+        //ApiScopes is the types of resources access that can be granted to the client
         public static IEnumerable<ApiScope> ApiScopes =>
            new ApiScope[]
            {
-               new ApiScope("movieAPI", "Movie API")
+               new ApiScope("movieAPI", "Movie API"),
+               new ApiScope(name: "movieapi.read",   displayName: "Read your data"),
+               new ApiScope(name: "movieapi.write",  displayName: "Write your data"),
            };
 
+        //ApiResource is what we are trying to protect
         public static IEnumerable<ApiResource> ApiResources =>
           new ApiResource[]
           {
-               //new ApiResource("movieAPI", "Movie API")
+               /*new ApiResource("movieAPI", "Movie API")
+               {
+                   Scopes = new List<string>{ "movieapi.read", "movieapi.write" },
+                   ApiSecrets = new List<Secret>{new Secret("secret".Sha256())},
+                   UserClaims = new List<string>{"role"}
+               }*/
           };
 
         public static IEnumerable<IdentityResource> IdentityResources =>
