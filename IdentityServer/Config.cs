@@ -62,6 +62,7 @@ namespace IdentityServer
                new ApiScope("movieAPI", "Movie API"),
                new ApiScope(name: "movieapi.read",   displayName: "Read your data"),
                new ApiScope(name: "movieapi.write",  displayName: "Write your data"),
+               new ApiScope(name: "movieapi.fullaccess",  displayName: "read and Write your data"),
            };
 
         //ApiResource is what we are trying to protect
